@@ -1,0 +1,27 @@
+<form class="criteria-friend-modal-content" method="post" action="/users/criteria-friend">
+  <div class="criteria-friend-container">
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="photo">上傳圖片</label>
+      </div>
+      <div class="my-col-75">
+        <input type="file" id="myFile" name="picture">
+      </div>
+    </div>
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="location">居住地</label>
+      </div>
+      <div class="my-col-75">
+        <select id="location" name="location">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="my-row">
+      <input class="friend-button" type="submit" value="送出">
+    </div>
+  </div>
+</form>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+body {
+  background-color: #e6f3ff;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 60px;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    word-break: break-all;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+.label {
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+    font-size: 16px;
+}
+.info {
+  background-color: #2196F3;
+  width: 100%;
+  height: 16px;
+} /* Blue */
+.topnav {
+  overflow: hidden;
+  background-color: #1a8cff;
+}
+
+.topnav div {
+  float: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 100px;
+  font-color: white;
+  color: white;
+}
+hr {
+    display: block;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #e6e6e6;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div>個人檔案</div>
+</div>
+<br>
+<img src="https://www.dejavu-py.com/show/self/{{uid}}" width="100%">
+<br>
+<table id="myTable">
+  <tr>
+    <td>會員編號</td>
+    <td style="width:65%;">{{id}}</td>
+  </tr>
+  <tr>
+    <td>居住地</td>
+    <td>{{self_location}}</td>
+  </tr>
+  <tr>
+    <td>性別</td>
+    <td>{{self_sex}}</td>
+  </tr>
+  <tr>
+    <td>喜歡</td>
+    <td>{{self_orientation}}</td>
+  </tr>
+  <tr>
+    <td>年齡</td>
+    <td>{{self_age}}</td>
+  </tr>
+  <tr>
+    <td>身高(公分)</td>
+    <td>{{self_height}}</td>
+  </tr>
+  <tr>
+    <td>體重(公斤)</td>
+    <td>{{self_weight}}</td>
+  </tr>
+</table>
+
+<hr>
+
+<div class="topnav">
+  <div>理想對象條件</div>
+</div>
+<br>
+<img src="https://www.dejavu-py.com/show/theone/{{uid}}" width="100%">
+<br>
+<table id="myTable">
+  <tr>
+    <td>居住地</td>
+    <td>{{theone_location}} {{theone_location_2}} {{theone_location_3}} {{theone_location_4}} {{theone_location_5}}</td>
+  </tr>
+  <tr>
+    <td>年齡</td>
+    <td>{{theone_min_age}} 到 {{theone_max_age}}</td>
+  </tr>
+  <tr>
+    <td>身高(公分)</td>
+    <td>{{theone_min_height}} 到 {{theone_max_height}}</td>
+  </tr>
+  <tr>
+    <td>體重(公斤)</td>
+    <td>{{theone_min_weight}} 到 {{theone_max_weight}}</td>
+  </tr>
+  <tr>
+    <td>最低年薪(台幣)</td>
+    <td>{{theone_min_salary}}</td>
+  </tr>
+</table>
+
+</body>
+</html>

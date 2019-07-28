@@ -1,0 +1,78 @@
+<form class="criteria-self-modal-content" method="post" action="/users/criteria-self-line/{{uid}}">
+  <div class="criteria-self-container">
+    <!--
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="photo">上傳圖片</label>
+      </div>
+      <div class="my-col-75">
+        <input type="file" id="myFile" name="picture">
+      </div>
+    </div>
+    -->
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="location">居住地（單選）</label>
+      </div>
+      <div class="my-col-75">
+        <select id="location" name="location" required>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="sex">我是（單選）</label>
+      </div>
+      <div class="my-col-75">
+        <select id="sex" name="sex" required>
+          <option value="male">男性</option>
+          <option value="female">女性</option>
+          <option value="third">第三性</option>
+        </select>
+      </div>
+    </div>
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="orientation">我喜歡（可複選）</label>
+      </div>
+      <div class="my-col-75">
+        <div class="my-row">
+          <div class="my-col-33">
+            <label class="check-container">
+              <input type="checkbox" value="male" name="orientation">男性
+              <span class="check-checkmark"></span>
+            </label>
+          </div>
+          <div class="my-col-33">
+            <label class="check-container">
+              <input type="checkbox" value="female" name="orientation">女性
+              <span class="check-checkmark"></span>
+            </label>
+          </div>
+          <div class="my-col-33">
+            <label class="check-container">
+              <input type="checkbox" value="third" name="orientation">第三性
+              <span class="check-checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="subject">自我介紹</label>
+      </div>
+      <div class="my-col-75">
+        <textarea id="subject" name="intro" placeholder="想告訴對方的話..." style="height:100px"></textarea>
+      </div>
+    </div>
+  -->
+    <div class="my-row">
+      <input class="login-button" type="submit" value="送出">
+    </div>
+  </div>
+</form>

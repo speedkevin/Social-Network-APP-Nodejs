@@ -1,0 +1,50 @@
+<!-- Add validation -->
+{{#if errors}}
+  {{#each errors}}
+    <div class = "alert alert-danger">
+      {{msg}}
+    </div>
+  {{/each}}
+{{/if}}
+<form class="register-modal-content" method="post" action="/users/register">
+  <div class="register-container">
+    <div class="my-row">
+      <div class="my-col-25">
+        <label> 姓名 </label>
+      </div>
+      <div class="my-col-75">
+        <input type="text" class="form-control" placeholder="Name" name="name" />
+      </div>
+
+      <div class="my-col-25">
+        <label> 使用者名稱 </label>
+      </div>
+      <div class="my-col-75">
+        <input type="text" class="form-control" placeholder="Username" name="username" />
+      </div>
+
+      <div class="my-col-25">
+        <label> 電子信箱 </label>
+      </div>
+      <div class="my-col-75">
+        <input type="email" class="form-control" placeholder="Email" name="email" />
+      </div>
+
+      <div class="my-col-25">
+        <label> 密碼 </label>
+      </div>
+      <div class="my-col-75">
+        <input type="password" class="form-control" placeholder="Password" name="password" />
+      </div>
+
+      <div class="my-col-25">
+        <label> 確認密碼 </label>
+      </div>
+      <div class="my-col-75">
+        <input type="password" class="form-control" placeholder="Password" name="password2" />
+      </div>
+
+      <button class="register-button" type="submit" class="btn btn-primary" /> 註冊 </button>
+    </div>
+  </div>
+</form>

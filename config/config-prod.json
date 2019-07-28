@@ -1,0 +1,17 @@
+{
+    "domain": "dejavu-nodejs.ap-northeast-1.elasticbeanstalk.com",
+    "server_port": "",
+    "db_name": "dejavu",
+    "db_username": "dejavu",
+    "db_password": "855$Peed172",
+    "db_port": "27017",
+    "python_domain": "52.196.26.207",
+    "python_port": "5000",
+    "path_dataset": "../public/img/",
+    "channelAccessToken" : "rIAt7PAPV6DTFXnQAyLujiYKTOJgz8i9xwTcPK2/WEvLxkyoppYtkt6JnU1RZZtOWvP8SZ7/Z2SXZ9dG2W/xnpeYjEfJz/YPTV6dM2KnIktcuLft+Nalo9VarvO20Z51M6K5rVxQSo0dpiVbsRMghAdB04t89/1O/w1cDnyilFU=",
+    "channelId": "1547762144",
+    "channelSecret": "6047ae4de78bdebd316f076f3ce728f7",
+    "ipAddress": "dejavu-nodejs.ap-northeast-1.elasticbeanstalk.com",
+    "full_domain": "dejavu-prod.herokuapp.com",
+    "top_theone_number": "1"
+}

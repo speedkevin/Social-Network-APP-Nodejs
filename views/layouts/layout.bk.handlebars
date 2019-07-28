@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dejavu</title>
+	<link rel="stylesheet" href="/css-dejavu/list.css" />
+	<link rel="stylesheet" href="/css-dejavu/criteria-friend.css" />
+	<link rel="stylesheet" href="/css-dejavu/criteria-self.css" />
+	<link rel="stylesheet" href="/css-dejavu/settings.css" />
+	<link rel="stylesheet" href="/css-dejavu/index.css" />
+	<link rel="stylesheet" href="/css-dejavu/login.css" />
+	<link rel="stylesheet" href="/css-dejavu/register.css" />
+	<link rel="stylesheet" href="/css-dejavu/forgot.css" />
+	<link rel="stylesheet" href="/css-dejavu/reset.css" />
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Navbar -->
+	<div class="nav-tab">
+		<a href="/"><button><img src="/img/home.gif" height="42" width="42"></button></a>
+		<div class="nav-tab to-right">
+			{{#if user}}
+			  <a href="/users/list"><button>推薦清單</button></a>
+			  <a href="/users/criteria-self"><button>自我簡介</button></a>
+				<a href="/users/criteria-friend"><button>擇友條件</button></a>
+				<a href="/users/settings"><button>系統設定</button></a>
+				<a href="/users/logout"><button>登出</button></a>
+			{{else}}
+			<!--
+				<a href="/users/login"><button>登入</button></a>
+				<a href="/users/register"><button>註冊</button></a>
+				-->
+			{{/if}}
+		</div>
+	</div>
+
+	<!-- Main -->
+	<div class="container">
+      <div>
+        <div class="alert-msg">
+					<!-- declare variables in app.js-->
+          {{#if success_msg}}
+            <div>{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div>{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div>{{error}}</div>
+          {{/if}}
+				</div>
+				<div>
+					<!-- Show body page -->
+          {{{body}}}
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+</body>
+</html>
+
+<!--Footer -->
+<footer>
+    <p class="footer-text">English | Chinese | Japanese <br>
+    ©2017 Dejavu Incorporated. All rights reserved.
+    </p>
+</footer>
+
+<!--
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+-->

@@ -1,0 +1,92 @@
+<style>
+body {
+  background-color: #e6f3ff;
+}
+
+.myfont {
+  font-size: 100px;
+}
+
+.mytext {
+  -moz-border-radius:10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  -khtml-border-radius: 10px; /* KHTML */
+  border-radius: 10px; /* CSS3 */
+  border-color:Gray;
+  border-width:3px;
+  height: 30px;
+}
+
+.form-control{
+  font-size: 50px;
+  height: 100px;
+}
+
+.btn{
+  font-size: 100px;
+  height: 200px;
+  width: 100%;
+}
+
+input[type="checkbox"]{
+  width: 100px; /*Desired width*/
+  height: 100px; /*Desired height*/
+  border-color: black;
+  border-radius: 5px;
+  border-width: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #1a8cff;
+}
+
+.topnav div {
+  float: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 100px;
+  font-color: white;
+  color: white;
+}
+hr {
+    display: block;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #e6e6e6;
+}
+</style>
+
+<div class="topnav">
+  <div>檢舉</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-2"></div>
+    <div class="col-6 col-md-8">
+        <form method="post" action="/users/line-impeach/{{token}}">
+          <br>
+
+          <div class="form-group">
+            <label for="impeachTextarea"><p class="myfont">*檢舉內容</p></label>
+            <p style="color: red; font-size: 50px;">**字數限制250字。**</p>
+            <textarea class="form-control" id="impeach" name="impeach" placeholder="填寫檢舉內容" rows="10" maxlength="250" required></textarea>
+          </div>
+
+          <hr>
+
+          <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">送出</button>
+          </div>
+        </form>
+    </div>
+    <div class="col-6 col-md-2"></div>
+</div>
+</div>

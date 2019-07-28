@@ -1,0 +1,207 @@
+/* Main Content */
+/*Desktop View*/
+
+/* Style the navbar */
+div.nav-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    height: 50px;
+}
+
+/* Style the buttons inside the tab */
+div.nav-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/*
+div.nav-tab button:hover {
+    border: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(51, 51, 204);
+}
+*/
+
+/* Create an active/current tablink class */
+div.nav-tab button.active {
+  border: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(51, 51, 204);
+}
+
+.to-right {
+  float: right;
+}
+
+.alert-msg {
+  text-align: center;
+  color: red;
+}
+
+/* Main */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	/* The reset rules */
+  background-image: url("../img/index.jpeg");
+	/*background-size: 100% 100%;*/
+	background-repeat: no-repeat;
+	z-index: -3;
+}
+
+body, h1, h2 {
+	/* The reset rules */
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+
+h1{
+	/* Align */
+	text-align: left;
+	/* Letter Style*/
+	font-size:80px;
+	font-weight:bold;
+	font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+	letter-spacing:10px;
+	z-index: -1;
+}
+
+h2 {
+	/* Align */
+	text-align: left;
+	padding-left:2px;
+	margin-top:4px;
+	z-index: -1;
+	/* Letter Style*/
+	font-family:"Arial Narrow",Arial,Helvetica,sans-serif;
+	font-size:40px;
+	font-weight:normal;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	/* Color */
+	color:#666666;
+}
+
+.container{
+	/* Color */
+	/*background: rgba(242, 242, 242, 1);*/
+
+	/* Align */
+	padding: 15px;
+	border: 0px solid #E0E0E0;
+	opacity: 0.8;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -2;
+
+	/* Size */
+	width: 1024px;
+	height: 548px;
+
+	/* Style: Rounded corners */
+	-moz-border-radius:20px;
+	-khtml-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius:20px;
+}
+
+.form-block {
+	margin-top: 50px;
+}
+
+
+/* Footer */
+
+footer {
+	margin: 0;
+	/*background-color: #b3d9ff;*/
+  opacity: 1.0;
+}
+
+.footer-text {
+  color: #ffffff;
+	font-size: 13px;
+	padding: 11px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 80px;
+	margin-right: 80px;
+	text-align: center;
+}
+
+
+/* Desktop View*/
+@media (max-width: 1024px){
+  .container{
+  	/* Size */
+  	width: 768px;
+  	height: 1024px;
+  }
+}
+
+/* iPad air View*/
+@media (max-width: 768px){
+  .container{
+  	/* Size */
+  	width: 480px;
+  	height: 853px;
+  }
+  div.nav-tab {
+      height: 100px;
+      padding-bottom: 10px;
+  }
+}
+
+/* iPhone 6 plus View*/
+@media (max-width: 480px){
+  .container{
+  	/* Size */
+  	width: 414px;
+  	height: 736px;
+  }
+  div.nav-tab {
+      height: 150px;
+      padding-bottom: 10px;
+  }
+}
+
+/* iPhone 6 plus View*/
+@media (max-width: 414px){
+  .container{
+  	/* Size */
+  	width: 375px;
+  	height: 667px;
+  }
+  div.nav-tab {
+      height: 150px;
+      padding-bottom: 10px;
+  }
+}
+
+/* iPhone 6 View*/
+@media (max-width: 375px){
+  .container{
+  	/* Size */
+  	width: 320px;
+  	height: 568px;
+  }
+  div.nav-tab {
+      height: 150px;
+      padding-bottom: 10px;
+  }
+}

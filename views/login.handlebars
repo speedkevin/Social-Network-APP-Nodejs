@@ -1,0 +1,63 @@
+<!--
+<h2 class="page-header"> Account Login </h2>
+<form method="post" action="/users/login">
+  <div class="form-group">
+    <label> Username </label>
+    <input type="text" class="form-control" name="username" placeholder="Username"/>
+  </div>
+  <div class="form-group">
+    <label> Password </label>
+    <input type="password" class="form-control" name="password" placeholder="Password"/>
+  </div>
+  <button type="submit" class="btn btn-primary" /> Submit </button>
+  <a class="btn btn-link" href="/users/forgot">Forgot Password?</a>
+</form>
+-->
+<!--
+<div id="id01" class="login-modal">
+-->
+  <form class="login-modal-content" method="post" action="/users/login">
+<!--
+    <div class="login-imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+      <img class="avatar" src="/img/img_avatar2.png" alt="Avatar">
+    </div>
+  -->
+    <div class="login-container">
+      <label><b>使用者名稱</b></label>
+      <input class="username" type="text" placeholder="Username" name="username" required>
+
+      <label><b>密碼</b></label>
+      <input class="password" type="password" placeholder="Password" name="password" required>
+
+      <button class="login-button" type="submit">登入</button>
+      <input type="checkbox" checked="checked"> 記住我
+      <span class="psw"><a href="/users/forgot">忘記密碼?</a></span>
+    </div>
+<!--
+    <div class="login-container" style="background-color:#f1f1f1">
+      <button type="button"
+        onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="/users/forgot">password?</a></span>
+    </div>
+  -->
+  </form>
+
+<!--
+</div>
+-->
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>

@@ -1,0 +1,29 @@
+<form class="settings-modal-content" method="post" action="/users/settings">
+  <div class="settings-container">
+啟動關閉帳號(關：取消訂閱，不會被搜尋到，不會收到email)
+    <div class="my-row">
+      <div class="my-col-25">
+        <label for="account">帳號狀態</label>
+      </div>
+      <div class="my-col-75">
+        <div class="my-row">
+          <div class="my-col-50">
+            <label class="radio-container">
+              <input type="radio" checked="checked" name="account_status" value="on">開啟
+              <span class="radio-checkmark"></span>
+            </label>
+          </div>
+          <div class="my-col-50">
+            <label class="radio-container">
+              <input type="radio" name="account_status" value="off">關閉
+              <span class="radio-checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-row">
+      <input class="settings-button" type="submit" value="送出">
+    </div>
+  </div>
+</form>

@@ -1,0 +1,64 @@
+<!--
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#somebutton").click(function(){
+        $.ajax({
+            headers: {
+                Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+            },
+            url: "http://localhost:5002/getFeatures",
+            crossDomain: true,
+            dataType: "jsonp",
+            type: "POST",
+            contentType: "application/json",
+            data: {
+                code: document.getElementById('code').value
+            },
+            error : function(jqXHR, exception) {
+                if (jqXHR.status === 0) {
+                  alert('Not connected.\nPlease verify your network connection.');
+                } else if (jqXHR.status == 404) {
+                  alert('The requested page not found. [404]');
+                } else if (jqXHR.status == 500) {
+                  alert('Internal Server Error [500].');
+                } else if (exception === 'parsererror') {
+                  alert('Requested JSON parse failed.');
+                } else if (exception === 'timeout') {
+                  alert('Time out error.');
+                } else if (exception === 'abort') {
+                  alert('Ajax request aborted.');
+                } else {
+                  alert('Uncaught Error.\n' + jqXHR.responseText);
+                }
+            },
+            success: function(msg){
+                //alert(JSON.stringify(msg));
+                $('#result').html(
+                  //msg.employees
+                  msg
+                );
+            }
+        }); // end ajax
+    }); // end click
+}); // end ready
+</script>
+-->
+
+<!--Main -->
+<div id="main">
+    <div class="form-block">
+        <h1>DejaVu</h1>
+        <h2>Match the one</h2>
+    </div>
+</div>
+
+<!--
+<div align="center">
+  <input type="text" id="code"/>
+  <button id="somebutton">送出</button>
+</div>
+
+
+<div id="result"></div>
+-->

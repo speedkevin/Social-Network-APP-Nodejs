@@ -1,0 +1,27 @@
+.criteria-friend-container {
+    padding: 16px;
+}
+
+/* Modal Content/Box */
+.criteria-friend-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Set a style for all buttons */
+.friend-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.friend-button:hover {
+    opacity: 0.8;
+}
