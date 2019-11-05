@@ -32,7 +32,7 @@
     "jquery": "^3.2.1",
     "jsdom": "^11.4.0",
     "mongodb": "^2.1.21",
-    "mongoose": "^4.4.19",
+    "mongoose": "^5.7.5",
     "nodemailer": "^4.2.0",
     "passport": "^0.4.0",
     "passport-http": "*",
