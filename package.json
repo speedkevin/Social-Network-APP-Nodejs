@@ -12,7 +12,7 @@
     "@line/bot-sdk": "^5.0.1",
     "agenda": "^1.0.3",
     "async": "^2.5.0",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.1",
     "connect-flash": "^0.1.1",
