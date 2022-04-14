@@ -11,7 +11,7 @@
   "dependencies": {
     "@line/bot-sdk": "^5.0.1",
     "agenda": "^1.0.3",
-    "async": "^2.5.0",
+    "async": "^3.2.2",
     "axios": "^0.17.1",
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.1",
