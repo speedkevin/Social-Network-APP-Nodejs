@@ -19,7 +19,7 @@
     "connect-mongo": "^2.0.0",
     "cookie-parser": "^1.4.3",
     "crypto": "^1.0.1",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "express-handlebars": "*",
     "express-messages": "^1.0.1",
     "express-session": "*",
